@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    font-family: Arial, sans-serif;
+}
+
+.stopwatch {
+    text-align: center;
+    perspective: 1000px; /* Enables 3D perspective */
+}
+
+.display {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px;
+    color: #61dafb;
+    transform: rotateY(10deg); /* 3D effect */
+    transition: transform 0.5s;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #61dafb;
+    color: white;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
